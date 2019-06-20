@@ -1,0 +1,42 @@
+body{
+    background-color: #000033;
+}
+header h1{
+    color: white;
+    font: normal 27pt Arial;
+    text-align: center;
+}
+section#interface{
+    font: normal 15pt Arial;
+    background-color: rgba(255,255,255,0.8);
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3)
+}
+div#formulario .caixanumero
+{
+    display: inline-block;
+}
+#confirm:hover{
+    transform: scale(1.15);
+    background-color: #000088;
+}
+footer{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(255,255,255,.5);
+    text-align: center;
+}
+#confirm{
+    padding: 10px;
+    border-color: #000033;
+    border-radius: 10pt;
+    border-style: groove;
+    color: white;
+    background-color: #0e0e5a;
+    margin-top: 14px
+}
