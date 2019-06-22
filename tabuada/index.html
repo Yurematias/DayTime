@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section id="interface">
+        <p>
+            Digite um número: 
+            <input type="number" name="numero" id="number" placeholder="digite aqui o número"> 
+            <input type="button" id="btn" value="Ver tabuada" onclick="showTab()">
+        </p> 
+        <select name="tabuada" id="tabuada" size="10">
+            <option value="t1">Esperando valor...</option>
+        </select>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVídeo</p>
+    </footer>
+    <script src="source.js"></script>
+</body>
+</html>
