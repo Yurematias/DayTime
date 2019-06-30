@@ -1,0 +1,6 @@
+const pessoa = {
+    idade: 
+    setInterval(function() {
+        this.idade++
+    },1000)
+}
