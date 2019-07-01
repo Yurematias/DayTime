@@ -2,6 +2,7 @@
 // o construtor é o parametro da função construtora
 // neste caso os valores 200 e 5 são atribuídos no construtor
 // caso não seja passado nada na instanciação. 
+// obs: não é possível declarar funções construtoras com arrowFunctions
 function Carro(veloMax = 160, delta = 10)
 {
     // para declarar atributos privados usa-se o let ou var 
@@ -19,7 +20,10 @@ function Carro(veloMax = 160, delta = 10)
         else 
             veloAtual = veloMax    
     }
-
+    this.getVeloMax = function()
+    {
+        return veloMax
+    }
     this.getVelocidade = function()
     {
         return veloAtual
