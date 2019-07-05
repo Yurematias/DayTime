@@ -36,3 +36,5 @@ console.log(Function.prototype.__proto__ === Object.prototype)
 
 // o atrbituto __proto__ do objeto prototype da função Object não aponta pra nada, por isso o valor é null, executa aí pra ver...
 console.log(Object.prototype.__proto__ === null)
+
+// RESUMINDO, OBJETOS TEM __proto FUNÇÕES TEM prototype
