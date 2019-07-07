@@ -17,10 +17,11 @@ json3 = '{"animal": "tigre", "tamanho": 3}'
 
 const jsons = [json1, json2, json3]
 console.log("-----------> JSONS <---------");
+console.log("cada elemento tem o tipo",typeof jsons[0]);
 jsons.forEach(value => console.log(value))
-
 console.log("-----------> CONVERTIDO PARA OBJETO <---------");
-jsonObjects = jsons.map(value => JSON.stringify(value)) 
+jsonObjects = jsons.map(value => JSON.parse(value)) 
+console.log("cada elemento tem o tipo",typeof jsonObjects[0]);
 
 jsonObjects.forEach(value => console.log(value))
 // isso equivale a esse for abaixo 
