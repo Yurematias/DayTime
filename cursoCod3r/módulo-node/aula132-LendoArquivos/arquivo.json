@@ -1,0 +1,8 @@
+{
+    "db":{
+        "user":"ymati",
+        "port": 5432,
+        "pass": "password",
+        "host": "localhost"
+    }
+}
