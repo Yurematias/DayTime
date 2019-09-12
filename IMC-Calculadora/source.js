@@ -1,5 +1,15 @@
+(() => {
+    document.getElementById('calc').addEventListener('click', event => {
+        event.preventDefault()
+        calculate()
+    })
+    document.getElementById('reset').addEventListener('click', () => {
+        document.getElementById('res').innerHTML = ''
+    })
+})()
+
 function validate() {
-    let inputs = document.body.getElementsByTagName('input')
+    let inputs = document.body.getElementsByClassName('num')
     document.getElementById('res').style.color = 'red'
 
     for (let i = 0; i < inputs.length; i++) {
