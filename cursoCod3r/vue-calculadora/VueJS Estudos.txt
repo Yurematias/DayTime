@@ -1,0 +1,5 @@
+npm i -g @vue/cli  // para criar uma nova aplicação no Vue
+
+npm run serve // para rodar o sevidor com vuejs 
+
+
