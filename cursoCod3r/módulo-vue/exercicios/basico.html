@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conceitos Básicos</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+
+<body class="exercicio">
+    <div id="app">
+        <p>1) {{ 2 + 2 }}</p>
+        <p>2) {{Math.floor(Math.random()*100)}}</p>
+        <p>3) {{"Yure Matias".split('').reverse().join('')}}</p>
+        <p>4) Produto: {{nome}}, R$ {{preco}}, {{desconto * 100}}%</p>
+        <p>5) Hora certa: {{horaCerta()}}</p>
+        <p>6) Preço com desconto: {{precoComDesconto}}</p>
+    </div>
+    <script>
+        // referenciando div com id app
+        // a partir dessa div, tudo será controlado pelo Vue
+        // assim é possível usar expressões js dentro do html
+        // desde que esteja tudo entre {{}} 
+        new Vue({
+            el: "#app",
+            // objeto de fato 
+            data: {
+                nome: 'Caneta',
+                preco: 2.75,
+                desconto: 0.15
+            },
+            // são funções que podem ser chamadas diretamente pela div 
+            methods: {
+                horaCerta() {
+                    return new Date().toLocaleString()
+                }
+            },
+            // são chamados sem parenteses como se fossem uma variável comum
+            computed: {
+                precoComDesconto() {
+                    return this.preco * (1 - this.desconto)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

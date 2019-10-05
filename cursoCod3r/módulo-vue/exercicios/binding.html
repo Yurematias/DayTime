@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+
+<body class="exercicio">
+    <div id="app">
+        <p>{{link}}</p>
+        <p><a href="{{link}}">GitHub??</a></p> <!-- jeito errado -->
+        <p><a v-bind:href="link">GitHub</a></p> <!-- jeito certo -->
+        <p><a :href="link">GitHub</a></p> <!-- jeito certo reduzido-->
+        <p>]
+            <!-- v-model referencia o os spans que tem nome abaixo -->
+            <!-- desta forma tudo do input será adicionado nos spans  -->
+            <input type="text" v-model="nome"><br>
+            <span>{{nome}}</span> <br>
+            <span>{{nome}}</span>
+        </p>
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                nome: "Yure",
+                link: "https://github.com/yurematias"
+            },
+            watch: {
+                // sempre que o atributo nome for alterado
+                // esse método abaixo será chamado
+                nome(novoValor) {
+                    console.log(novoValor.toUpperCase());
+                }
+            }
+        })    
+    </script>
+</body>
+
+</html>
