@@ -1,5 +1,5 @@
 
-// declarar funções dentro de array, funciona como se fosse um dado comun 
+// declarar funções dentro de array, funciona como se fosse um dado comum 
 // let array = [(a,b) => {return a+b},50,40,3]
 
 // for (const i in array) {
